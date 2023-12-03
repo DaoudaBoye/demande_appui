@@ -110,7 +110,7 @@ if (isset($_POST['submit'])) {
     <main class="demo-page-content">
 
       <section>
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateForm()">
+        <form id="myForm" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateForm()">
           <div class="href-target" id="input-types"></div>
           <h1>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify">
@@ -258,6 +258,7 @@ if (isset($_POST['submit'])) {
           </div>
         
           <button type="submit" name="submit">Submit</button>
+          <button type="button" class="form-btn" onclick="resetForm()">Annuler</button>
         </form>
       </section>
 
@@ -265,6 +266,12 @@ if (isset($_POST['submit'])) {
     </main>
   </div>
   <!-- partial -->
+
+  <script>
+  function resetForm() {
+    document.getElementById("myForm").reset();
+  }
+</script>
 
 </body>
 </html>

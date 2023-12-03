@@ -306,13 +306,13 @@ table {
   background-repeat: no-repeat;
 }
 
-.nice-form-group > input[type=range] {
+/* .nice-form-group > input[type=range] {
   -webkit-appearance: none;
   width: 100%;
   cursor: pointer;
-}
+} */
 
-.nice-form-group > input[type=range]:focus {
+/* .nice-form-group > input[type=range]:focus {
   outline: none;
 }
 
@@ -340,9 +340,9 @@ table {
   -webkit-appearance: none;
   appearance: none;
   margin-top: calc(var(--nf-slider-track-height)*0.5 - var(--nf-slider-thumb-size)*0.5);
-}
+} */
 
-.nice-form-group > input[type=range]::-moz-range-thumb {
+/* .nice-form-group > input[type=range]::-moz-range-thumb {
   height: var(--nf-slider-thumb-size);
   width: var(--nf-slider-thumb-size);
   border-radius: var(--nf-slider-thumb-size);
@@ -352,17 +352,17 @@ table {
   -moz-appearance: none;
   appearance: none;
   box-sizing: border-box;
-}
+}*/
 
-.nice-form-group > input[type=range]:focus::-webkit-slider-thumb {
+/* .nice-form-group > input[type=range]:focus::-webkit-slider-thumb {
   box-shadow: 0 0 0 var(--nf-slider-thumb-border-focus-width) var(--nf-slider-thumb-background);
 }
 
 .nice-form-group > input[type=range]:focus::-moz-range-thumb {
   box-shadow: 0 0 0 var(--nf-slider-thumb-border-focus-width) var(--nf-slider-thumb-background);
-}
+} */
 
-.nice-form-group > input[type=color] {
+/* .nice-form-group > input[type=color] {
   border: var(--nf-input-border-width) solid var(--nf-input-border-color);
   border-bottom-width: var(--nf-input-border-bottom-width);
   height: calc(var(--nf-input-size)*2);
@@ -377,9 +377,9 @@ table {
 
 .nice-form-group > input[type=color]::-webkit-color-swatch-wrapper {
   padding: 5%;
-}
+} */
 
-.nice-form-group > input[type=color]::-moz-color-swatch {
+ .nice-form-group > input[type=color]::-moz-color-swatch {
   border-radius: calc(var(--nf-input-border-radius)/2);
   border: none;
 }
@@ -408,7 +408,7 @@ table {
   background-repeat: no-repeat;
   background-size: var(--nf-input-size);
   width: auto;
-}
+} 
 
 .nice-form-group > input[type=date]::-webkit-calendar-picker-indicator, .nice-form-group > input[type=date]::-webkit-inner-spin-button, .nice-form-group > input[type=month]::-webkit-calendar-picker-indicator, .nice-form-group > input[type=month]::-webkit-inner-spin-button, .nice-form-group > input[type=time]::-webkit-calendar-picker-indicator, .nice-form-group > input[type=time]::-webkit-inner-spin-button, .nice-form-group > input[type=week]::-webkit-calendar-picker-indicator, .nice-form-group > input[type=week]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -799,4 +799,35 @@ details summary::marker {
 
 details summary::-webkit-details-marker {
   display: none;
+}
+
+
+
+
+/* Ajoute ces styles dans ton fichier style.css */
+button[type="submit"], button[type="button"] {
+  margin-top: 10px; /* Espacement entre les boutons */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50; /* couleur de fond pour le bouton "Submit" */
+  color: white; /* couleur du texte pour le bouton "Submit" */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* couleur de fond au survol pour le bouton "Submit" */
+}
+
+button[type="button"] {
+  background-color: #f44336; /* couleur de fond pour le bouton "Annuler" */
+  color: white; /* couleur du texte pour le bouton "Annuler" */
+}
+
+button[type="button"]:hover {
+  background-color: #d32f2f; /* couleur de fond au survol pour le bouton "Annuler" */
 }
